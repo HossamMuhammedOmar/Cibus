@@ -11,6 +11,3 @@ setInterval(() => {
     image.nextElementSibling.classList.add("change");
   }
 }, 2000);
-
-// 4s remove first image and appear the next image
-//
