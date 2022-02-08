@@ -99,7 +99,6 @@ nav {
 nav.open {
   top: 0;
 }
-
 /* end of navbar */
 
 /* section one */
@@ -121,6 +120,33 @@ nav.open {
   color: #14213d;
   text-shadow: 0.2rem 0.2rem 0.3rem #000000;
   text-align: center;
+}
+
+.heading-section-one span {
+  color: #e63946;
+  text-shadow: 0.2rem 0.2rem 0.8rem #000000;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.heading-section-one {
+  position: relative;
+  cursor: default;
+  transition: letter-spacing 0.3s;
+}
+
+.heading-section-one:hover {
+  letter-spacing: 1rem;
+}
+
+.heading-section-one::before {
+  content: "";
+  width: 100%;
+  height: 0.05rem;
+  background: #fca311;
+  box-shadow: 0.5rem 0.5rem 0.9rem #4361ee;
+
+  position: absolute;
 }
 
 .section-one-icons img {
