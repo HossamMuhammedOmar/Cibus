@@ -22,17 +22,46 @@ nav {
   height: 14rem;
   background-color: #535c68;
   position: fixed;
-  top: 0;
+  top: -14rem;
   z-index: 2;
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s ease;
 }
 
 .nav-link {
   color: #e5e5e5;
   margin: 0 4rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+
+.open .nav-link {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.open .nav-link:nth-child(1) {
+  transition: all 0.4s 0.1s;
+}
+
+.open .nav-link:nth-child(2) {
+  transition: all 0.4s 0.3s;
+}
+
+.open .nav-link:nth-child(3) {
+  transition: all 0.4s 0.4s;
+}
+
+.open .nav-link:nth-child(4) {
+  transition: all 0.4s 0.5s;
+}
+
+.open .nav-link:nth-child(5) {
+  transition: all 0.4s 0.6s;
 }
 
 .nav-link p {
@@ -51,10 +80,24 @@ nav {
 .menu {
   height: 7rem;
   position: fixed;
-  top: 12.6rem;
+  /* top 12.6rem by javascript */
+  top: -1.3rem;
   cursor: pointer;
   transform: rotate(-30deg);
   filter: drop-shadow(0.1rem 0.1rem 0.3rem #000);
+  transition: all 0.2s ease;
+}
+
+.menu:hover {
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.menu.open {
+  top: 12.6rem;
+}
+
+nav.open {
+  top: 0;
 }
 
 /* end of navbar */

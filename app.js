@@ -11,3 +11,9 @@ setInterval(() => {
     image.nextElementSibling.classList.add("change");
   }
 }, 2000);
+
+document.querySelector(".menu").addEventListener("click", () => {
+  document.querySelectorAll(".target").forEach((item) => {
+    item.classList.toggle("open");
+  });
+});
