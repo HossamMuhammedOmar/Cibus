@@ -162,16 +162,18 @@ html {
 .section-three {
   background: #e5e5e5;
   padding: 5rem 0;
-  height: 120vh;
+  height: 135vh;
 }
 
 .heading-section-three {
-  font-size: 14rem;
+  font-size: 16rem;
   font-family: "Kaushan Script", cursive;
   text-shadow: 0.1rem 0.1rem 0.2rem #f9c80e, 0.2rem 0.2rem 0.2rem #f86624,
     0.3rem 0.3rem 0.2rem #ff4800, 0.4rem 0.4rem 0.2rem #1d3557;
   cursor: default;
   transition: all 0.2s;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 
 .heading-section-three:hover {
@@ -272,7 +274,7 @@ html {
   font-weight: 300;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  color: #e5e5e5;
+  color: white;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s;
