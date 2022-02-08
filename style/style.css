@@ -1,6 +1,5 @@
 /* GOOGLE FONTS   */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
 /* common style */
 * {
   padding: 0;
@@ -164,6 +163,21 @@ html {
   background: #e5e5e5;
   padding: 5rem 0;
   height: 120vh;
+}
+
+.heading-section-three {
+  font-size: 14rem;
+  font-family: "Kaushan Script", cursive;
+  text-shadow: 0.1rem 0.1rem 0.2rem #f9c80e, 0.2rem 0.2rem 0.2rem #f86624,
+    0.3rem 0.3rem 0.2rem #ff4800, 0.4rem 0.4rem 0.2rem #1d3557;
+  cursor: default;
+  transition: all 0.2s;
+}
+
+.heading-section-three:hover {
+  transform: translateY(-1rem);
+  text-shadow: 0.3rem 0.3rem 0.1rem #f9c80e, 0.5rem 0.5rem 0.1rem #f86624,
+    0.7rem 0.7rem 0.1rem #ff4800, 0.9rem 0.9rem 0.1rem #1d3557;
 }
 
 .gallery-container {
