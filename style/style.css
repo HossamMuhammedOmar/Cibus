@@ -86,6 +86,7 @@ nav {
   transform: rotate(-30deg);
   filter: drop-shadow(0.1rem 0.1rem 0.3rem #000);
   transition: all 0.2s ease;
+  z-index: 10;
 }
 
 .menu:hover {
@@ -521,8 +522,208 @@ footer form button {
   .gallery-link:hover::after {
     width: 85%;
   }
+
+  .menu {
+    height: 6rem;
+  }
+
+  .card {
+    width: 35rem;
+    height: 50rem;
+  }
 }
 
-/*todo: 1320px NEXT BREAKPOINT */
+@media (max-width: 1340px) {
+  .gallery-image {
+    width: 60rem;
+    height: 40rem;
+  }
+
+  .gallery-link {
+    margin: 15rem 10rem;
+  }
+
+  .gallery-container {
+    margin-right: 11rem;
+    margin-top: 0;
+  }
+
+  .heading-section-three {
+    padding-bottom: 0;
+  }
+
+  .gallery-link:hover::before {
+    height: 35rem;
+    right: 0;
+  }
+
+  .gallery-link:hover::after {
+    width: 55rem;
+  }
+
+  .food-description {
+    width: 80%;
+    font-size: 2rem;
+    bottom: 4rem;
+  }
+
+  .food-name {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 40%;
+  }
+
+  .section-two {
+    justify-content: center;
+    height: auto;
+  }
+
+  .heading-section-two {
+    padding-bottom: 10rem;
+  }
+
+  .card .card-title {
+    font-size: 4rem;
+  }
+  .card-btn {
+    font-size: 2rem;
+  }
+
+  footer {
+    height: 20vh;
+  }
+}
+
+@media (max-width: 950px) {
+  .heading-section-three {
+    margin-bottom: 5rem;
+    padding-top: 0;
+  }
+  .gallery-image {
+    width: 50rem;
+    height: 30rem;
+  }
+
+  .gallery-link {
+    margin-left: 8rem;
+    margin-right: 1rem;
+    margin-top: 0;
+  }
+
+  .gallery-link::before {
+    right: 2rem;
+  }
+
+  .gallery-link:hover::before {
+    height: 25rem;
+    right: 2rem;
+  }
+
+  .gallery-link:hover::after {
+    width: 45rem;
+  }
+
+  .cards-container {
+    padding-bottom: 0;
+  }
+
+  .card {
+    width: 30rem;
+    height: 45rem;
+  }
+
+  .card .card-title {
+    font-size: 3rem;
+  }
+
+  .card-btn {
+    font-size: 1.5rem;
+  }
+
+  .section-one {
+    height: 80vh;
+  }
+
+  footer {
+    height: 15vh;
+  }
+
+  .card {
+    transform: rotateY(0) skewX(0);
+    width: 35rem;
+    height: 50rem;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 35%;
+  }
+
+  footer {
+    height: 15vh;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 30%;
+  }
+
+  .gallery-container {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 26%;
+  }
+
+  .section-one {
+    height: 70vh;
+  }
+
+  .card {
+    width: 30rem;
+    height: 45rem;
+  }
+
+  .card .card-title {
+    font-size: 2.5rem;
+  }
+
+  .card-btn {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    height: 13vh;
+  }
+}
+
+@media (max-width: 430px) {
+  html {
+    font-size: 18%;
+  }
+
+  .section-one {
+    height: 50vh;
+  }
+
+  footer {
+    height: 12vh;
+  }
+
+  .heading-section-one,
+  .heading-section-two,
+  .heading-section-three {
+    font-size: 12rem;
+  }
+}
 
 /* end of responsive */
